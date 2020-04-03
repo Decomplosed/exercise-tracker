@@ -31,6 +31,19 @@ class CreateExercise extends React.Component {
     })
   }
 
+  onSubmit(e) {
+    e.preventDefault()
+
+    const exercise = {
+      username: this.state.username,
+      description: this.state.description,
+      duration: this.state.duration,
+      date: this.state.date
+    }
+
+    console.log(exercise)
+  }
+
   render() {
     return <div>CreateExercise</div>
   }
