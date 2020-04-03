@@ -25,6 +25,12 @@ class CreateExercise extends React.Component {
     })
   }
 
+  onChangeDuration(e) {
+    this.setState({
+      date: e.target.value
+    })
+  }
+
   onChangeDate(date) {
     this.setState({
       date: date
