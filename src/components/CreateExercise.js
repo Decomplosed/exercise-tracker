@@ -13,6 +13,24 @@ class CreateExercise extends React.Component {
     }
   }
 
+  onChangeUsername(e) {
+    this.setState({
+      username: e.target.value
+    })
+  }
+
+  onChangeDescription(e) {
+    this.setState({
+      duration: e.target.value
+    })
+  }
+
+  onChangeDate(e) {
+    this.setState({
+      date: e.target.value
+    })
+  }
+
   render() {
     return <div>CreateExercise</div>
   }
