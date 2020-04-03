@@ -42,6 +42,8 @@ class CreateExercise extends React.Component {
     }
 
     console.log(exercise)
+
+    window.location = '/'
   }
 
   render() {
