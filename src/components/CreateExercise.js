@@ -1,4 +1,5 @@
 import React from 'react'
+import DatePicker from 'react-datepicker'
 
 class CreateExercise extends React.Component {
   constructor(props) {
