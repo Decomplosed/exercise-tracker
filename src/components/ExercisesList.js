@@ -33,6 +33,18 @@ class ExercisesList extends React.Component {
     })
   }
 
+  exerciseList() {
+    return this.state.exercises.map((currentexercise) => {
+      return (
+        <Exercise
+          exercise={currentexercise}
+          deleteExercise={this.deleteExercise}
+          key={currentexercise._id}
+        />
+      )
+    })
+  }
+
   render() {
     return (
       <div>
