@@ -5,6 +5,10 @@ import axios from 'axios'
 class ExercisesList extends React.Component {
   constructor(props) {
     super(props)
+
+    this.deleteExercise = this.deleteExercise.bind(this)
+
+    this.state = { exrcises: [] }
   }
 
   render() {
