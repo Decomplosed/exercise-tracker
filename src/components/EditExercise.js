@@ -23,6 +23,17 @@ class EditExercise extends React.Component {
   }
 
   componentDidMount() {
+    axios
+      .get(`http://localhost:5000/users/${this.props.match.params.id}`)
+      .then((res) => {
+        this.setState({
+          username: res.data.username,
+          description: res.data.description,
+          duration: res.data.duration,
+          date: new Date(res.data.date),
+        })
+      })
+
     axios.get('http://localhost:5000/users/').then((res) => {
       if (res.data.length > 0) {
         this.setState({
