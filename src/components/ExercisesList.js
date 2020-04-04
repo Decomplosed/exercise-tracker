@@ -22,6 +22,16 @@ class ExercisesList extends React.Component {
       .catch((err) => console.log(err))
   }
 
+  deleteExercise(id) {
+    axios
+      .delete(`http://localhost:5000/exercises/${id}`)
+      .then((res) => console.log(res.data))
+
+    this.setState({
+      exercises: this.state.exrcises.filter((el) => el._id !== id),
+    })
+  }
+
   render() {
     return <div>ExercisesList</div>
   }
