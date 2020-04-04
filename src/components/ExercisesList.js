@@ -12,11 +12,14 @@ class ExercisesList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/exercises/').then((res) => {
-      this.setState({
-        exercises: res.data,
+    axios
+      .get('http://localhost:5000/exercises/')
+      .then((res) => {
+        this.setState({
+          exercises: res.data,
+        })
       })
-    })
+      .catch((err) => console.log(err))
   }
 
   render() {
