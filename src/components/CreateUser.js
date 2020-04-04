@@ -21,23 +21,13 @@ class CreateUser extends React.Component {
   onSubmit(e) {
     e.preventDefault()
 
-    const exercise = {
+    const user = {
       username: this.state.username,
-      description: this.state.description,
-      duration: this.state.duration,
-      date: this.state.date,
     }
 
-    console.log(exercise)
+    console.log(user)
 
     window.location = '/'
-  }
-
-  componentDidMount() {
-    this.setState({
-      users: ['test user'],
-      username: 'test user',
-    })
   }
 
   render() {
