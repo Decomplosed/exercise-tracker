@@ -33,6 +33,7 @@ class EditExercise extends React.Component {
           date: new Date(res.data.date),
         })
       })
+      .catch((err) => console.log(err))
 
     axios.get('http://localhost:5000/users/').then((res) => {
       if (res.data.length > 0) {
