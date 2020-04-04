@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 class ExercisesList extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return <div>ExercisesList</div>
   }
