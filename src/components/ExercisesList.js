@@ -8,7 +8,7 @@ class ExercisesList extends React.Component {
 
     this.deleteExercise = this.deleteExercise.bind(this)
 
-    this.state = { exrcises: [] }
+    this.state = { exercises: [] }
   }
 
   componentDidMount() {
