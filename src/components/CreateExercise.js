@@ -63,6 +63,11 @@ class CreateExercise extends React.Component {
       date: this.state.date,
     }
 
+    axios
+      .post('http://localhost:5000/exercise/add', exercise)
+      .then((res) => console.log(res.data))
+      .catch((err) => console.log(err))
+
     console.log(exercise)
 
     window.location = '/'
