@@ -59,7 +59,7 @@ class ExercisesList extends React.Component {
               <th>Actions</th>
             </tr>
           </thead>
-          {/* <tbody>{this.exerciseList()}</tbody> */}
+          <tbody>{this.exerciseList()}</tbody>
         </table>
       </div>
     )
