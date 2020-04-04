@@ -11,7 +11,7 @@ class CreateExercise extends React.Component {
       description: '',
       duration: 0,
       date: new Date(),
-      users: []
+      users: [],
     }
 
     this.onChangeUsername = this.onChangeUsername.bind(this)
@@ -24,31 +24,31 @@ class CreateExercise extends React.Component {
   componentDidMount() {
     this.setState({
       users: ['test user'],
-      username: 'test user'
+      username: 'test user',
     })
   }
 
   onChangeUsername(e) {
     this.setState({
-      username: e.target.value
+      username: e.target.value,
     })
   }
 
   onChangeDescription(e) {
     this.setState({
-      duration: e.target.value
+      description: e.target.value,
     })
   }
 
   onChangeDuration(e) {
     this.setState({
-      date: e.target.value
+      duration: e.target.value,
     })
   }
 
   onChangeDate(date) {
     this.setState({
-      date: date
+      date: date,
     })
   }
 
@@ -59,7 +59,7 @@ class CreateExercise extends React.Component {
       username: this.state.username,
       description: this.state.description,
       duration: this.state.duration,
-      date: this.state.date
+      date: this.state.date,
     }
 
     console.log(exercise)
@@ -81,7 +81,7 @@ class CreateExercise extends React.Component {
               value={this.state.username}
               onChange={this.onChangeUsername}
             >
-              {this.state.users.map(function(user) {
+              {this.state.users.map(function (user) {
                 return (
                   <option key={user} value={user}>
                     {user}
