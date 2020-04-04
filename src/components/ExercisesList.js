@@ -48,7 +48,7 @@ class ExercisesList extends React.Component {
       .then((res) => console.log(res.data))
 
     this.setState({
-      exercises: this.state.exrcises.filter((el) => el._id !== id),
+      exercises: this.state.exercises.filter((el) => el._id !== id),
     })
   }
 
