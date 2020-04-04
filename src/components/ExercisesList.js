@@ -11,6 +11,14 @@ class ExercisesList extends React.Component {
     this.state = { exrcises: [] }
   }
 
+  componentDidMount() {
+    axios.get('http://localhost:5000/exercises/').then((res) => {
+      this.setState({
+        exercises: res.data,
+      })
+    })
+  }
+
   render() {
     return <div>ExercisesList</div>
   }
