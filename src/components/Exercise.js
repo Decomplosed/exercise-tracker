@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Exercise = ({ props }) => {
+const Exercise = (props) => {
   return (
     <tr>
       <td>{props.exercise.username}</td>
