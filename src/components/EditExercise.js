@@ -24,7 +24,7 @@ class EditExercise extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`http://localhost:5000/users/${this.props.match.params.id}`)
+      .get(`http://localhost:5000/exercises/${this.props.match.params.id}`)
       .then((res) => {
         this.setState({
           username: res.data.username,
@@ -147,7 +147,7 @@ class EditExercise extends React.Component {
           <div className='form-group'>
             <input
               type='submit'
-              value='Create Exercise Log'
+              value='Edit Exercise Log'
               className='btn btn-primary'
             />
           </div>
